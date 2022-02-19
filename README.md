@@ -11,7 +11,7 @@ The goal is to find a list of Pewlett-Hackard employees that are retiring, per t
   - Most of them are engineers
   - 585 employees are eligible for mentorship program
 
-![](https://github.com/mpfraser7/Election_Analysis/blob/main/Analysis/County%20Votes%20Code.png)
+![](https://github.com/mpfraser7/Pewlett-Hackard-Analysis/blob/main/PH%20results.png)
 
 
 
