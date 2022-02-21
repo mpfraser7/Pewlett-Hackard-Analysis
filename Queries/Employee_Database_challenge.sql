@@ -1,9 +1,9 @@
 SELECT em.emp_no, em.first_name, em.last_name, ti.title, ti.from_date, ti.to_date
 INTO retirement_titles
 FROM employees as em
-INNER JOIN titles as ti
+LEFT JOIN titles as ti
 ON em.emp_no = ti.emp_no
-WHERE em.birth_date BETWEEN '1952-01-01' AND '1955-01-01'
+WHERE em.birth_date BETWEEN '1952-01-01' AND '1955-12-31'
 ORDER BY em.emp_no
 
 
@@ -25,5 +25,5 @@ FROM employees AS em
 LEFT JOIN dept_emp AS de ON em.emp_no = de.emp_no
 LEFT JOIN titles AS ti ON em.emp_no = ti.emp_no
 WHERE (de.to_date = '9999-01-01') 
-AND (em.birth_date BETWEEN '1965-01-01' AND '1965-01-12')
+AND (em.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY em.emp_no ASC
